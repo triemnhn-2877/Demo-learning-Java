@@ -1,3 +1,4 @@
+package SchoolManagement;
 import java.util.Scanner;
 
 public class Hocsinh {
@@ -5,6 +6,7 @@ public class Hocsinh {
 	protected String address;
 	protected String age;
 	protected String i;
+
 	public String getI() {
 		return i;
 	}
@@ -37,22 +39,20 @@ public class Hocsinh {
 		this.age = age;
 	}
 	
-	public void themMoiHS() {
+	public Hocsinh themMoiHS() {
 		Hocsinh hs = new Hocsinh();
-		Scanner sc= new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 		System.out.println("How many students wanna add ?");
 		i = sc.nextLine();
 		hs.setI(sc.nextLine());
+		System.out.println("Starting add student");
 		System.out.println("Input name: ");
 		hs.setName(sc.nextLine());
 		System.out.println("Input age: ");
 		hs.setAge(sc.nextLine());
 		System.out.println("Input Address: ");
 		hs.setAddress(sc.nextLine());
-	}
-	
-	public static void main(String[] args) {
-		
+		return hs;
 	}
 
 }
