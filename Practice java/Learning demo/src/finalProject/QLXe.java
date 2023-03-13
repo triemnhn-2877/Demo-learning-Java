@@ -48,11 +48,14 @@ public class QLXe implements Owner {
 		x2.addRelease();
 		x2.addOtherInfor();
 //		x2.addVehicle();
-//		danhSachXe.add(x2);
-//		while (danhSachXe.size() < n) {
-//			x2.addVehicle();
-//			danhSachXe.add(x2);
-//		}
+		danhSachXe.add(x2);
+		while (danhSachXe.size() < n) {
+			x2.addPname();
+			x2.addRelease();
+			x2.addId();
+			x2.addOtherInfor();
+			danhSachXe.add(x2);
+		}
 		// in ra danh sach xe
 		System.out.println("List vehicle: ");
 		for (Vehicle vs : danhSachXe) {

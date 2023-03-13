@@ -6,7 +6,15 @@ public class ThongTinHang {
 	protected String name; 
 	protected int price;
 	protected int remain;
+	private String vat;
 	
+	
+	public String getVat() {
+		return vat;
+	}
+	public void setVat(String vat) {
+		this.vat = vat;
+	}
 	public String getid() {
 		return id;
 	}
@@ -66,13 +74,17 @@ public class ThongTinHang {
 			remain= sc.nextInt();
 		}
 	}
-	
-	public static void main(String[] args) {
+	public void addInfor() {
 		ThongTinHang infor= new ThongTinHang();
 		infor.inputid();
 		infor.inputname();
 		infor.inputprice();
-		infor.inputremain();
+		infor.inputremain();	
+	}
+	
+	public static void main(String[] args) {
+		ThongTinHang x1 = new ThongTinHang();
+		x1.addInfor();
 	}
 
 }

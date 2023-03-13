@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Hocsinh {
 	protected String name;
 	protected String address;
-	protected String age;
+	protected int age;
 	protected String i;
 
 	public String getI() {
@@ -31,11 +31,11 @@ public class Hocsinh {
 		this.address = address;
 	}
 
-	public String getAge() {
+	public int getAge() {
 		return age;
 	}
 
-	public void setAge(String age) {
+	public void setAge(int age) {
 		this.age = age;
 	}
 	
@@ -48,11 +48,12 @@ public class Hocsinh {
 		System.out.println("Starting add student");
 		System.out.println("Input name: ");
 		hs.setName(sc.nextLine());
-		System.out.println("Input age: ");
-		hs.setAge(sc.nextLine());
 		System.out.println("Input Address: ");
 		hs.setAddress(sc.nextLine());
+		System.out.println("Input age: ");
+		hs.setAge(sc.nextInt());
 		return hs;
 	}
+	
 
 }

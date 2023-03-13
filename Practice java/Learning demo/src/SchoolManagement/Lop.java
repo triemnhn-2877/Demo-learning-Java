@@ -44,9 +44,27 @@ public class Lop extends Hocsinh {
 	}
 
 	public void displayall() {
-		System.out.println("All student infor ");
-		for (int i = 0; i< listHS.size(); i++) {
-		System.out.println(listHS.get(i));
+		System.out.println("all student infor ");
+		for(Hocsinh hs: listHS){
+			System.out.println("Name: "+ hs.getName());
+			System.out.println("Address: " +hs.getAddress() );
+			System.out.println("Age: " + hs.getAge());
+		}
 	}
+	
+	public void findSt() {
+		System.out.println("Hoc sinh 20 tuoi: ");
+		for(Hocsinh st: listHS) {
+			if (st.getAge()= 20) {
+				System.out.println(listHS);
+			}
+		System.out.println("Hoc sinh 23 tuoi va que o DN: ");
+		for( Hocsinh dn: listHS) {
+			if ((dn.getAddress().equals(dn)) && (dn.getAge() = 23)) {
+				
+			}
+		}
+		
+		}
 	}
 }
